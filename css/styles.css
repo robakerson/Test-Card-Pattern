@@ -4,81 +4,107 @@ body {
 
 /* define colors & widths */
 .vertical-grey {
-  background-color: hsl(0, 0%, 40%);
+  background-color: hsl(0, 0%, 40%); 
   height: 100%;
   width: 12.5%;
+	animation-name: vertgrey;
 }
 
 .vertical-white {
   background-color: hsl(0, 0%, 75%);
   height: 100%;
   width: 10.7%;
+
+	animation-name: vertwhite;
 }
+
+
 
 .vertical-cyan {
   background-color: hsl(177, 86%, 41%);
   height: 100%;
   width: 10.7%;
+
+
+	animation-name: vertcyan;
 }
 
 .vertical-green {
   background-color: hsl(120, 86%, 41%);
   height: 100%;
   width: 10.7%;
+
+
+	animation-name: vertgreen;
 }
 
 .vertical-yellow {
   background-color: hsl(60, 86%, 41%);
   height: 100%;
   width: 10.7%;
+
+	animation-name: vertyellow;
 }
 
 .vertical-magenta {
   background-color: hsl(314, 86%, 41%);
   height: 100%;
   width: 10.7%;
+
+	animation-name: vertmagenta;
 }
 
 .vertical-red {
   background-color: hsl(0, 86%, 41%);
   height: 100%;
   width: 10.7%;
+	animation-name: vertred;
+
 }
 
 .vertical-blue {
   background-color: hsl(244, 86%, 41%);
   height: 100%;
   width: 11%;
+	animation-name: vertblue;
 }
 
 .middle-cyan {
   background-color: hsl(180, 100%, 50%);
   height: 100%;
   width: 12.5%;
+
+	animation-name: middlecyan;
+
 }
 
 .middle-plusI {
   background-color: hsl(232, 68%, 20%);
   height: 100%;
   width: 10.7%;
+	animation-name: middleplusI;
 }
 
 .middle-white {
   background-color: hsl(0, 0%, 75%);
   height: 100%;
   width: 65%;
+	animation-name: vertwhite;
 }
 
 .middle-blue {
   background-color: blue;
   height: 100%;
   width: 12.5%;
+
+	animation-name: middleblue;
 }
 
 .middle-yellow {
   background-color: yellow;
   height: 100%;
   width: 12.5%;
+	animation-name: middleyellow;
 }
 
 .middle-purple {
@@ -86,48 +112,185 @@ body {
   background-color: hsl(261, 68%, 26%);
   height: 100%;
   width: 10.7%;
+
+	animation-name: middlepurple;
 }
 
 .middle-grad {
-  background-image: linear-gradient(to right, black, white);
+  background: linear-gradient(to right, black, white);
   height: 100%;
   width: 65%;
+
+	animation-name: middlegrad;
 }
 
 .middle-red {
   background-color: red;
   height: 100%;
   width: 12.5%;
+	animation-name: middlered;
 }
 
 .bottom-grey {
   background-color: hsl(0, 0%, 15%);
   height: 100%;
   width: 12.5%;
+	animation-name: botgrey;
+
 }
 
 .bottom-white {
   background-color: white;
   height: 100%;
   width: 21.4%;
+	animation-name: botwhite;
 }
 
 .bottom-blk1 {
   background-color: hsl(0, 0%, 2%);
   height: 100%;
   width: 3.6%;
+
+	animation-name: botblk1;
 }
 
 .bottom-blk2 {
   background-color: hsl(0, 0%, 4%);
   height: 100%;
   width: 3.6%;
+	animation-name: botblk2;
 }
 
 .bottom-blk3 {
   background-color: hsl(0, 0%, -2%);
   height: 100%;
   width: 3.6%;
+}
+
+.anim-param{
+
+animation-duration:5s;
+
+
+}
+
+
+/* animations */
+
+
+@keyframes vertgrey{
+	0% {background-color: hsl(0, 0%, 40%);}
+	33% {background-color:rgb(120,0,0);}
+	66% {background-color:rgb(0,120,0);}
+	100% {background-color:rgb(0,0,120);}
+}
+@keyframes vertwhite{
+	0% {background-color: hsl(0, 0%, 75%);}
+	33% {background-color:rgb(191,0,0);}
+	66% {background-color:rgb(0,191,0);}
+	100% {background-color:rgb(0,0,191);}
+}
+@keyframes vertcyan{
+	0% {background-color: hsl(177, 86%, 41%);}
+	33% {background-color:rgb(15,0,0);}
+	66% {background-color:rgb(0,194,0);}
+	100% {background-color:rgb(0,0,185);}
+}
+@keyframes vertgreen{
+	0% {background-color: hsl(120, 86%, 41%);}
+	33% {background-color:rgb(15,0,0);}
+	66% {background-color:rgb(0,194,0);}
+	100% {background-color:rgb(0,0,15);}
+}
+@keyframes vertyellow{
+	0% {background-color: hsl(60, 86%, 41%);}
+	33% {background-color:rgb(194,0,0);}
+	66% {background-color:rgb(0,194,0);}
+	100% {background-color:rgb(0,0,15);}
+}
+@keyframes vertmagenta{
+	0% {background-color: hsl(314, 86%, 41%);}
+	33% {background-color:rgb(194,0,0);}
+	66% {background-color:rgb(0,15,0);}
+	100% {background-color:rgb(0,0,153);}
+}
+@keyframes vertred{
+	0% {background-color: hsl(0, 86%, 41%);}
+	33% {background-color:rgb(194,0,0);}
+	66% {background-color:rgb(0,15,0);}
+	100% {background-color:rgb(0,0,15);}
+}
+@keyframes vertblue{
+	0% {background-color: hsl(244, 86%, 41%);}
+	33% {background-color:rgb(27,0,0);}
+	66% {background-color:rgb(0,15,0);}
+	100% {background-color:rgb(0,0,194);}
+}
+@keyframes middlecyan{
+	0% {background-color: hsl(180, 100%, 50%);}
+	33% {background-color:rgb(0,0,0);}
+	66% {background-color:rgb(0,255,0);}
+	100% {background-color:rgb(0,0,255);}
+}
+@keyframes middleplusI{
+	0% {background-color: hsl(232, 68%, 20%);}
+	33% {background-color:rgb(16,0,0);}
+	66% {background-color:rgb(0,26,0);}
+	100% {background-color:rgb(0,0,86);}
+}
+@keyframes middleblue{
+	0% {background-color: hsl(240, 100%, 50%);}
+	33% {background-color:rgb(0,0,0);}
+	66% {background-color:rgb(0,0,0);}
+	100% {background-color:rgb(0,0,255);}
+}
+@keyframes middleyellow{
+	0% {background-color: hsl(60, 100%, 50%);}
+	33% {background-color:rgb(255,0,0);}
+	66% {background-color:rgb(0,255,0);}
+	100% {background-color:rgb(0,0,0);}
+}
+@keyframes middlepurple{
+	0% {background-color: hsl(261, 68%, 26%);}
+	33% {background-color:rgb(53,0,0);}
+	66% {background-color:rgb(0,21,0);}
+	100% {background-color:rgb(0,0,111);}
+}
+@keyframes middlegrad{
+	0% {background: linear-gradient(to right, black, white);}
+	33% {background:linear-gradient(to right, #000000, #FF0000);}
+	66% {background:linear-gradient(to right, #000000, #00FF00);}
+	100% {background:linear-gradient(to right, #000000, #0000FF);}
+}
+@keyframes middlered{
+	0% {background-color: hsl(0, 100%, 50%);}
+	33% {background-color:rgb(255,0,0);}
+	66% {background-color:rgb(0,0,0);}
+	100% {background-color:rgb(0,0,0);}
+}
+@keyframes botgrey{
+	0% {background-color: hsl(0, 0%, 15%);}
+	33% {background-color:rgb(38,0,0);}
+	66% {background-color:rgb(0,38,0);}
+	100% {background-color:rgb(0,0,38);}
+}
+@keyframes botwhite{
+	0% {background-color: hsl(0, 0%, 100%);}
+	33% {background-color:rgb(255,0,0);}
+	66% {background-color:rgb(0,255,0);}
+	100% {background-color:rgb(0,0,255);}
+}
+@keyframes botblk1{
+	0% {background-color: hsl(0, 0%, 2%);}
+	33% {background-color:rgb(5,0,0);}
+	66% {background-color:rgb(0,5,0);}
+	100% {background-color:rgb(0,0,5);}
+}
+@keyframes botblk2{
+	0% {background-color: hsl(0, 0%, 4%);}
+	33% {background-color:rgb(10,0,0);}
+	66% {background-color:rgb(0,10,0);}
+	100% {background-color:rgb(0,0,10);}
 }
 
 /* define containers top, middle1, middle2, bottom */
